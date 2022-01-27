@@ -11,5 +11,5 @@ En esta sesión se procedió a dar una vista general de que trata el curso y que
 - Cloud Computing
 
 ## Recursos
-- [ Grabación ](https://drive.google.com/file/d/1132q4Y_E51SxpY8I9R0BPn0Cxtvf87ka/view?usp=sharing)
-- [ Slides ](https://docs.docker.com/get-docker/)
+- [ Grabación ](https://youtu.be/VhwrP7pFd6I)
+- [ Slides ](https://github.com/racarlosdavid/Code_SO1/blob/Clase_1/Clase%201/Slides/SO1%202022%20Clase%201%20.pdf)

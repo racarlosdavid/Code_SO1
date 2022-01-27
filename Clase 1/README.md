@@ -12,4 +12,4 @@ En esta sesión se procedió a dar una vista general de que trata el curso y que
 
 ## Recursos
 - [ Grabación ](https://youtu.be/VhwrP7pFd6I)
-- [ Slides ](https://github.com/racarlosdavid/Code_SO1/blob/Clase_1/Clase%201/Slides/SO1%202022%20Clase%201%20.pdf)
+- [ Slides ](https://github.com/racarlosdavid/Code_SO1/blob/Clase_1/Clase%201/Slides/SO1%202022%20Clase%201.pdf)

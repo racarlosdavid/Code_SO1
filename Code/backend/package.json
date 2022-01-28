@@ -1,0 +1,50 @@
+{
+    "name": "back-end",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "node src/app.js",
+        "dev": "nodemon src/app.js",
+        "sonar": "node sonar-project.js",
+        "test": "jest --testTimeout=20000 --coverage --forceExit"
+    },
+    "jest": {
+        "testEnvironment": "node",
+        "coveragePathIgnorePatterns": [
+            "/node_modules/"
+        ],
+        "testResultsProcessor": "jest-sonar-reporter"
+    },
+    "jestSonar": {
+        "reportPath": "coverage",
+        "reportFile": "test-reporter.xml",
+        "indent": 4
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "bcryptjs": "^2.4.3",
+        "chai-http": "^4.3.0",
+        "cors": "^2.8.5",
+        "crypto-js": "^4.1.1",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.2",
+        "jest": "^27.4.5",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.13.13",
+        "nodemailer": "^6.4.18",
+        "nyc": "^15.1.0"
+    },
+    "devDependencies": {
+        "chai": "*",
+        "chai-http": "^3.0.0",
+        "jest-sonar-reporter": "^2.0.0",
+        "mocha": "^3.5.0",
+        "nodemon": "^2.0.7",
+        "sonarqube-scanner": "^2.8.1",
+        "supertest": "^6.1.6"
+    }
+}

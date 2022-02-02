@@ -1,4 +1,4 @@
-# CLASE 2 SO1 2S 2022
+# CLASE 2 SO1 1S 2022
 ## Descripción
 En esta sesión se dio una introducción a docker, una herramienta que permite automatizar el despliegue de aplicaciones dentro de contenedores de software, haciendo uso de virtualización de aplicaciones en múltiples sistemas operativos. Se dio una explicación sobre esta herramienta, como instalar docker en un sistema operativo linux, seguido de los principales comandos que permiten su utilización, por último se desarrollaron ejemplos de cómo crear contenedores con docker y también el uso de volumes de docker para la persistencia de datos.
 

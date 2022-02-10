@@ -1,0 +1,49 @@
+version: "3.9" 
+services:
+  db:
+    image: mongo
+    container_name: dbmongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongoadmin
+      MONGO_INITDB_ROOT_PASSWORD: So1pass1S_2022
+    ports:
+      - "27017:27017"
+    restart: always
+    volumes:
+      - /Users/carlosdavid/Desktop/mongodata:/data/db
+    networks:
+      - clase4-net
+
+  backend:
+    build: ./backend
+    container_name: backend_clase4
+    environment:
+      MONGO_USERNAME: mongoadmin
+      MONGO_PASSWORD: So1pass1S_2022
+      MONGO_HOST: db
+    ports:
+    - "5000:5000"
+    restart: always
+    depends_on:
+    - db
+    networks:
+    - clase4-net
+
+  frontend:
+    build: ./frontend
+    container_name: frontend_clase4
+    ports:
+    - "80:80"
+    restart: always
+    depends_on:
+    - backend
+    networks:
+    - clase4-net
+  
+volumes:
+  mongodata:
+
+networks:
+  clase4-net:
+    name: "clase4-net"
+    driver: bridge

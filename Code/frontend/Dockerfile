@@ -3,7 +3,7 @@ FROM node:16-alpine AS node
 WORKDIR /app
 COPY . .
 RUN yarn install
-ENV REACT_APP_BACKEND http://13.68.217.46:5000
+ENV REACT_APP_BACKEND http://20.121.4.72:5000
 RUN yarn build
 
 ### STAGE 2: Run ###

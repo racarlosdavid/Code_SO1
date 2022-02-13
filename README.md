@@ -1,5 +1,5 @@
 # CLASE 4 SO1 1S 2022
-Los temas vistos en esta sesion fueron docker network, los distintos tipos de drives que existen, tambien se enseño docker-compose, una herramienta muy util de docker que permite la ejecucion de multiples contenedores de tal forma que permite la ejecucion de multiples contenedores de una forma rapida y sencilla, por ultimo en esta sesion se dio la explicacion de la primera practica del laboratorio.
+Los temas vistos en esta sesión fueron docker network, los distintos tipos de drives que existen, también se enseñó docker-compose, una herramienta muy útil de docker que permite la ejecución de múltiples contenedores de tal forma que permite la ejecución de múltiples contenedores de una forma rápida y sencilla, por último en esta sesión se dio la explicación de la primera práctica del laboratorio.
 
 ## Herramientas Utilizadas
 - [ Install Docker ](https://docs.docker.com/get-docker/)

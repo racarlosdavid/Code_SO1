@@ -1,5 +1,5 @@
 # CLASE 3 SO1 1S 2022
-En esta sesión aprendimos como crear imagenes de nuestras aplicaciones utilizando dockerfiles, tambien se realizo un ejemplos en el que se demuestra como desplegar una arquitectura sencilla compuesta por un frontend, backend y una base de datos utilizando contenedores, por ultimo se enseño como llevar esta arquitectura del entorno de desarro a un entorno de produccion en una maquina virtual en la nube.
+En esta sesión aprendimos como crear imagenes de nuestras aplicaciones utilizando dockerfiles, tambien se realizo un ejemplos en el que se demuestra cómo desplegar una arquitectura sencilla compuesta por un frontend, backend y una base de datos utilizando contenedores, por último se enseño como llevar esta arquitectura del entorno de desarrollo a un entorno de producción en una máquina virtual en la nube.
 
 ## Herramientas Utilizadas
 - [ Install Docker ](https://docs.docker.com/get-docker/)

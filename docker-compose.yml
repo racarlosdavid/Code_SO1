@@ -32,6 +32,6 @@ services:
     - clase5-net
 
 networks:
-  clase4-net:
+  clase5-net:
     name: "clase5-net"
     driver: bridge

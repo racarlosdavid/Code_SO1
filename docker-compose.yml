@@ -1,0 +1,37 @@
+version: "3.9" 
+services:
+  db:
+    image: mongo
+    container_name: dbmongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongoadmin
+      MONGO_INITDB_ROOT_PASSWORD: So1pass1S_2022
+    ports:
+      - "27017:27017"
+    restart: always
+    volumes:
+      - /home/azureuser/mongodata:/data/db
+    networks:
+      - clase5-net
+
+  backend:
+    build: ./api
+    container_name: backend_clase5
+    environment:
+      MONGO_USERNAME: mongoadmin
+      MONGO_PASSWORD: So1pass1S_2022
+      MONGO_HOST: db
+    ports:
+      - "3000:3000"
+    restart: always
+    volumes:
+      - /proc:/miproc
+    depends_on:
+    - db
+    networks:
+    - clase5-net
+
+networks:
+  clase4-net:
+    name: "clase5-net"
+    driver: bridge

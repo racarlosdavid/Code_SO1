@@ -17,7 +17,7 @@ El ejemplo realizado es módulo de kernel que imprime la hora del sistema en un 
 ## Arquitectura 
 ![Alt text](Img/arquitectura.png)
 
-### Comandos Docker Networks
+### Comandos utilizados para el ejemplo
 ```sh
 #PREPARACION DEL ENTORNO DE TRABAJO
 sudo apt-get update

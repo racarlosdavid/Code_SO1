@@ -4,57 +4,49 @@ Los temas vistos en esta sesión fueron docker network, los distintos tipos de d
 ## Herramientas Utilizadas
 - [ Install Docker ](https://docs.docker.com/get-docker/)
 - [ Install Docker Compose](https://docs.docker.com/compose/install/)
-- [ Docker Hub ](https://hub.docker.com/)
 - [ Docker Volumes ](https://docs.docker.com/storage/volumes/)
 
 ## Recursos
-- [ Grabación ](https://drive.google.com/file/d/1VHq8T9H75LLosdlIzEZPAGyktL4erTyu/view?usp=sharing)
+- [ Grabación ](https://drive.google.com/file/d/1IFL6Q6qWfyiWBAYQs0RI30L6SUxiPL8X/view?usp=sharing)
 - [ Slides ](/Slides)
 - [ Código ](/Code)
 
 ## Ejemplo
-El ejemplo realizado es una aplicacion que registra estudiantes, para esto se cuenta con un frontend desarrollado en React, un servidor desarrollado en NodeJS y como motor de base de datos se utiliza un contenedor de mongoDB, se crean los Dockerfiles del backend y del frontend para poder crear los contenedores y finalmente se tiene una arquitectura como se puede visualizar en la imagen.
+El ejemplo realizado es modulo de kernel que imprime la hora del sistema en un archivo llamado timestamps ubicado en /proc, tambien se desarrollo una api en NodeJS para poder obtener dicha informacion y que pueda ser consumida por el cliente.
 
 ## Arquitectura 
 ![Alt text](Img/arquitectura.png)
 
 ### Comandos Docker Networks
 ```sh
-# Para listar las networks utilizamos:
-docker network ls
+#PREPARACION DEL ENTORNO DE TRABAJO
+sudo apt-get update
+sudo apt-get install gcc
+sudo apt-get install g++
+sudo apt-get install make
+sudo apt-get install build-essential linux-headers-`uname -r`
 
-# Para crear una nueva network utilizamos:
-# Si no especificamos el driver, se usar por defecto bridge
-docker network create <NETWORK_NAME>
+#Para compilar timestamps.c
+make all
 
-# Para crear una nueva network especificando el driver utilizamos:
-docker network create --driver <DRIVER_NAME> <NETWORK_NAME>
+#Para limpiar los archivos generados al hacer make all
+make clean
 
-# Para inspeccionar una network utilizamos:
-docker inspect <NETWORK_ID|NETWORK_NAME>
+#Para imprimir en pantalla los logs del buffer del sistema operativo
+sudo dmesg
 
-# Para conectar un container a una network utilizamos: 
-docker network connect <NETWORK_ID|NETWORK_NAME> <CONTAINER_ID|CONTAINER_NAME>
+#Para limpiar los logs del buffer del sistema operativo
+sudo dmesg -C
 
-# Para desconectar un container a una network utilizamos: 
-docker network disconnect <NETWORK_ID|NETWORK_NAME> <CONTAINER_ID|CONTAINER_NAME>
+#Para insertar el modulo al kernel
+sudo insmod [nombre_modulo].ko
 
-# Si quiero conectar un container a una network cuando ejecuto el comando run utilizamos el parametro --network:
---network <NETWORK_ID|NETWORK_NAME>
+#Para quitar el modulo del kernel
+sudo rmmod [nombre_modulo].ko
 
-# Para eliminar una network utilizamos:
-docker network rm <NETWORK_ID|NETWORK_NAME>
-```
+#Para revisar los datos del archivo que genera nuestro modulo con la data 
+cat /proc/[nombre_modulo]
 
-### Docker Compose
-```sh
-# Si el archivo yml se llama docker-compose 
-# Agregamos --build si queremos que las imagenes se construyan nuevamente
-docker-compose up -d
-docker-compose down
-
-# Si el archivo yml tiene otro nombre diferente a docker-compose
-# Agregamos --build si queremos que las imagenes se construyan nuevamente
-docker-compose -f <NAME>.yml up -d
-docker-compose -f <NAME>.yml down
+#Para ver todos los modulos
+lsmod
 ```

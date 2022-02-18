@@ -1,5 +1,5 @@
 # CLASE 5 SO1 1S 2022
-Los temas vistos en esta sesión fueron docker network, los distintos tipos de drives que existen, también se enseñó docker-compose, una herramienta muy útil de docker que permite la ejecución de múltiples contenedores de tal forma que permite la ejecución de múltiples contenedores de una forma rápida y sencilla, por último en esta sesión se dio la explicación de la primera práctica del laboratorio.
+En esta sesión se dio un ejemplo de cómo implementar un módulo sencillo de kernel, de manera que el estudiante pueda desarrollar con éxito el módulo requerido para la fase 1 del proyecto, por último en esta misma sesión se dio la explicación de la fase 1 del proyecto.
 
 ## Herramientas Utilizadas
 - [ Install Docker ](https://docs.docker.com/get-docker/)
@@ -12,7 +12,7 @@ Los temas vistos en esta sesión fueron docker network, los distintos tipos de d
 - [ Código ](/Code)
 
 ## Ejemplo
-El ejemplo realizado es modulo de kernel que imprime la hora del sistema en un archivo llamado timestamps ubicado en /proc, tambien se desarrollo una api en NodeJS para poder obtener dicha informacion y que pueda ser consumida por el cliente.
+El ejemplo realizado es módulo de kernel que imprime la hora del sistema en un archivo llamado timestamps ubicado en /proc, también se desarrolló una api en NodeJS para poder obtener dicha información y que pueda ser consumida por el cliente.
 
 ## Arquitectura 
 ![Alt text](Img/arquitectura.png)

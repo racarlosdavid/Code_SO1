@@ -19,7 +19,7 @@ El ejemplo realizado es módulo de kernel que imprime la hora del sistema en un 
 
 ### Comandos utilizados para el ejemplo
 ```sh
-#Instalacion de liberias y header necesarios
+#Instalacion de liberias y headers necesarios
 sudo apt-get update
 sudo apt-get install gcc
 sudo apt-get install g++

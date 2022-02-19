@@ -7,7 +7,7 @@ En esta sesión se dio un ejemplo de cómo implementar un módulo sencillo de ke
 - [ Docker Volumes ](https://docs.docker.com/storage/volumes/)
 
 ## Recursos
-- [ Grabación ](https://drive.google.com/file/d/1IFL6Q6qWfyiWBAYQs0RI30L6SUxiPL8X/view?usp=sharing)
+- [ Grabación ](https://youtu.be/QzpTec6Q4Ag)
 - [ Slides ](/Slides)
 - [ Código ](/Code)
 
@@ -19,7 +19,7 @@ El ejemplo realizado es módulo de kernel que imprime la hora del sistema en un 
 
 ### Comandos utilizados para el ejemplo
 ```sh
-#PREPARACION DEL ENTORNO DE TRABAJO
+#Instalacion de liberias y header necesarios
 sudo apt-get update
 sudo apt-get install gcc
 sudo apt-get install g++

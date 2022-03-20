@@ -1,5 +1,5 @@
 # CLASE 8 SO1 1S 2022
-En esta sesión se enseñó a los estudiantes sobre los rcp ( llamadas a procedimiento remotos) y también se enseñó el framework gRCP el cual es una herramienta muy útil para implementar los rpc.
+En esta sesión se resolvieron dudas sobre la primera fase del proyecto y se enseñó a los estudiantes sobre los rcp ( llamadas a procedimiento remotos) y también se enseñó el framework gRCP el cual es una herramienta muy útil para implementar los rpc.
 
 
 ## Recursos

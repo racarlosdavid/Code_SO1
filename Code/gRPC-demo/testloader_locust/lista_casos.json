@@ -1,0 +1,44 @@
+[
+    {
+      "name": "William Adolfo Corado Cabrera",
+      "location": "Guatemala city",
+      "age": 20,
+      "infected_type": "imported",
+      "state": "active"
+    },
+    {
+      "name": "Fredy Jose Ramirez Sandoval",
+      "location": "Sacatepequez",
+      "age": 15,
+      "infected_type": "imported",
+      "state": "deceased"
+    },
+    {
+      "name": "Juan Luis Robles Molina",
+      "location": "Chimaltenango",
+      "age": 31,
+      "infected_type": "imported",
+      "state": "active"
+    },
+    {
+      "name": "Nelson Alesandro Gonzalez Perez",
+      "location": "Escuintla",
+      "age": 31,
+      "infected_type": "imported",
+      "state": "recovered"
+    },
+    {
+      "name": "Carlos Antonio Campaneros Benito",
+      "location": "El Progreso",
+      "age": 28,
+      "infected_type": "communitary",
+      "state": "active"
+    },
+    {
+      "name": "Victor Alfonso Lopez Morales",
+      "location": "Quiche",
+      "age": 19,
+      "infected_type": "imported",
+      "state": "active"
+    }
+]

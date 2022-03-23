@@ -1,0 +1,23 @@
+{
+  "name": "gRPC-Client-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gRPC_client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.9",
+    "@grpc/proto-loader": "^0.6.9",
+    "async": "^3.2.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "google-protobuf": "*",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.5",
+    "morgan": "^1.10.0"
+  }
+}

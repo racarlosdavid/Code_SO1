@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.demo";
+option java_outer_classname = "DemoProto";
+option objc_class_prefix = "HLW";
+
+package demo;
+
+service Casos {
+  rpc AddCaso (CasoRequest) returns (Reply) {}
+  rpc ListarCasos (Empty) returns (stream CasoReply) {}
+}
+
+message CasoRequest {
+  string name = 1;
+  string location = 2;
+  int32 age = 3;
+  string infected_type = 4;
+  string state = 5;
+}
+
+message Reply {
+  string message = 1;
+}
+
+message Empty {}
+
+message CasoReply {
+  string name = 1;
+  string location = 2;
+  int32 age = 3;
+  string infected_type = 4;
+  string state = 5;
+}

@@ -1,0 +1,8 @@
+Instalacion
+pip install locust
+
+Ver version instalada
+locust --v
+
+Correr locust
+locust -f Demo.py

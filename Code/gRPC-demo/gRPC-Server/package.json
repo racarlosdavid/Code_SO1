@@ -1,0 +1,21 @@
+{
+  "name": "gRPC-Server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gRPC_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.9",
+    "@grpc/proto-loader": "^0.6.9",
+    "async": "^3.2.3",
+    "google-protobuf": "*",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.5",
+    "mysql": "^2.18.1"
+  }
+}

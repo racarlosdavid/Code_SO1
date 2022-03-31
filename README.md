@@ -11,3 +11,4 @@ Ejemplos para el laboratorio de Sistemas Operativos 1 1S 2022
 - [ Clase 7 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_7)
 - [ Clase 8 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_8)
 - [ Clase 9 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_9)
+- [ Clase 10 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_10)

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "github.com/racarlosdavid/demo-gRPC/proto";
+
+package proto;
+
+service OperacionAritmetica {
+  rpc OperarValores (OperacionRequest) returns (OperacionReply) {}
+}
+
+message OperacionRequest {
+  string operacion = 1;
+  string valor1 = 2;
+  string valor2 = 3;
+}
+
+message OperacionReply {
+  string resultado = 1;
+}

@@ -1,13 +1,7 @@
-# Code_SO1
-Ejemplos para el laboratorio de Sistemas Operativos 1 1S 2022
+# CLASE 10 SO1 1S 2022
+En esta sesión se realizo la conferencia del curso, el tema de la misma fue sobre Redis ya que es una de las bases de datos que se utiliza durante el desarrollo del curso.
 
-## Clases
-- [ Clase 1 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_1)
-- [ Clase 2 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_2)
-- [ Clase 3 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_3)
-- [ Clase 4 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_4)
-- [ Clase 5 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_5)
-- [ Clase 6 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_6)
-- [ Clase 7 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_7)
-- [ Clase 8 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_8)
-- [ Clase 9 ](https://github.com/racarlosdavid/Code_SO1/tree/Clase_9)
+## Recursos
+- [ Grabación Conferencia Redis ]()
+- [ Clase RabbitMQ ](https://drive.google.com/file/d/1myaHenABxocErnYpnR_K902Utg6_nr9O/view?usp=sharing)
+- [ Codigo RabbitMQ ](/Code)

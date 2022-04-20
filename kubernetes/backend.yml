@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+  labels:
+    app: backend-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: backend-deployment
+  template:
+    metadata:
+      labels:
+        app: backend-deployment
+    spec:
+      containers:
+        - name: backend
+          image: racarlosdavid/k8s_backend
+          env:
+          - name: MYSQL_HOST 
+            value: 
+          - name: MYSQL_USER 
+            value: 
+          - name: MYSQL_PASSWORD 
+            value: 
+          - name: MYSQL_DATABASE 
+            value: 
+          - name: MONGO_URL
+            value: 
+          - name: REGION
+            value: 
+          - name: ACCESSKEYID
+            value: 
+          - name: SECRETACCESSKEY
+            value: 
+          ports:
+            - containerPort: 2000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-backend
+  labels:
+    app: backend-deployment
+spec:
+  type: LoadBalancer
+  selector:
+    app: backend-deployment
+  ports:
+    - port: 80
+      targetPort: 2000
+      protocol: TCP
